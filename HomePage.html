@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villas for Sale Parga Greece — Pasha Villas | New Build Private Pool | PargaDreams.com</title>
+  <meta name="description" content="Pasha Villas — 6 new-build contemporary villas for sale in Trikorfo, Parga, Greece. Private pool, 114 m², 2 bedrooms, private parking. From €450,000. Greek Golden Visa Zone 2.">
+  <meta property="og:title" content="Pasha Villas — New Build Villas for Sale in Parga, Greece | From €450,000">
+  <meta property="og:description" content="6 architect-designed villas for sale in Trikorfo, Parga, Greece. New build, private pool, 114 m², Golden Visa Zone 2 (€400k). From €450,000.">
+  <meta property="og:image" content="IMG_9979_pool.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sand: #f5f0e8;
+      --sand-dark: #ede6d6;
+      --charcoal: #1a1814;
+      --charcoal-mid: #2d2922;
+      --gold: #b8996a;
+      --gold-light: #d4b88a;
+      --stone: #8c7e6a;
+      --stone-light: #b0a49a;
+      --cream: #faf8f3;
+      --white: #ffffff;
+      --text-dark: #1a1814;
+      --text-mid: #4a4540;
+      --text-light: #8c7e6a;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* ── GRAIN OVERLAY ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.5;
+    }
+
+    /* ── NAVIGATION ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.5rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.5s ease;
+    }
+    nav.scrolled {
+      background: rgba(26,24,20,0.96);
+      backdrop-filter: blur(12px);
+      padding: 1rem 4rem;
+      box-shadow: 0 1px 0 rgba(184,153,106,0.15);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-cta {
+      background: transparent;
+      border: 1px solid rgba(184,153,106,0.6);
+      color: var(--gold-light);
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.65rem 1.6rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+    .nav-cta:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--charcoal);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 700px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--charcoal);
+    }
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      transform: scale(1.05);
+      animation: heroZoom 12s ease-out forwards;
+    }
+    @keyframes heroZoom {
+      from { transform: scale(1.1); }
+      to   { transform: scale(1.02); }
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(26,24,20,0.88) 0%,
+        rgba(26,24,20,0.35) 50%,
+        rgba(26,24,20,0.15) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 4rem 6rem;
+      max-width: 900px;
+    }
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.3s forwards;
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3.2rem, 6vw, 5.5rem);
+      font-weight: 300;
+      line-height: 1.08;
+      color: var(--white);
+      margin-bottom: 1.8rem;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.5s forwards;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+      max-width: 540px;
+      margin-bottom: 2.8rem;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.7s forwards;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.9s forwards;
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--charcoal);
+      border: none;
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 1rem 2.4rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gold-light); }
+    .btn-ghost {
+      background: transparent;
+      color: rgba(255,255,255,0.8);
+      border: 1px solid rgba(255,255,255,0.3);
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 1rem 2.4rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-ghost:hover {
+      border-color: var(--gold-light);
+      color: var(--gold-light);
+    }
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 4rem;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 0;
+      animation: fadeIn 1s ease 1.4s forwards;
+    }
+    .hero-scroll span {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      writing-mode: vertical-lr;
+    }
+    .scroll-line {
+      width: 1px;
+      height: 60px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 2s ease-in-out 1.8s infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: scaleY(0.8); }
+      50% { opacity: 1; transform: scaleY(1); }
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--charcoal);
+      padding: 0;
+    }
+    .stats-inner {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-top: 1px solid rgba(184,153,106,0.2);
+    }
+    .stat-item {
+      padding: 2rem 2.5rem;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .stat-label {
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* ── SECTION SHARED ── */
+    section { position: relative; }
+    .section-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--charcoal);
+      margin-bottom: 1.5rem;
+    }
+    .section-title em { font-style: italic; color: var(--stone); }
+    .section-body {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--text-mid);
+      max-width: 560px;
+    }
+
+    /* fade-in on scroll */
+    .reveal { opacity:1; transform:none; }
+    .reveal.animate-in { animation:revealUp 0.7s ease both; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ── INTRO / CONCEPT ── */
+    .intro {
+      padding: 9rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8rem;
+      align-items: center;
+      background: var(--cream);
+    }
+    .intro-text {}
+    .intro-visual {
+      position: relative;
+    }
+    .intro-img-main {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      display: block;
+    }
+    .intro-img-badge {
+      position: absolute;
+      bottom: -2rem;
+      left: -2rem;
+      background: var(--charcoal);
+      padding: 1.8rem 2rem;
+      width: 200px;
+    }
+    .badge-num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      display: block;
+    }
+    .badge-text {
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-top: 0.4rem;
+      display: block;
+    }
+    .intro-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      margin: 2rem 0;
+    }
+    .intro-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem 2rem;
+      margin-top: 2.5rem;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .feature-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 0.5rem;
+    }
+    .feature-text {
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+
+    /* ── GALLERY ── */
+    .gallery {
+      padding: 0;
+      background: var(--charcoal);
+    }
+    .gallery-header {
+      padding: 6rem 4rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .gallery-header .section-title { color: var(--white); margin-bottom: 0; }
+    .gallery-header .section-eyebrow { color: var(--gold); }
+    .gallery-link {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--stone-light);
+      text-decoration: none;
+      border-bottom: 1px solid var(--stone);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .gallery-link:hover { color: var(--gold-light); border-color: var(--gold-light); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr;
+      grid-template-rows: 360px 260px;
+      gap: 3px;
+    }
+    .gallery-cell {
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-cell:first-child {
+      grid-row: 1 / 3;
+    }
+    .gallery-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.7s ease;
+    }
+    .gallery-cell:hover img { transform: scale(1.04); }
+    .gallery-cell-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(26,24,20,0.5), transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-cell:hover .gallery-cell-overlay { opacity: 1; }
+    .cell-label {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-cell:hover .cell-label { opacity: 1; }
+
+    /* Placeholder cells for gallery variety */
+    .gallery-placeholder {
+      background: var(--charcoal-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .gallery-placeholder-inner {
+      text-align: center;
+    }
+    .gallery-placeholder-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      display: block;
+      color: rgba(184,153,106,0.3);
+    }
+    .gallery-placeholder-text {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.2);
+    }
+
+    /* ── FEATURES ── */
+    .features {
+      padding: 9rem 4rem;
+      background: var(--sand-dark);
+    }
+    .features-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8rem;
+      align-items: start;
+    }
+    .features-visual {
+      position: relative;
+    }
+    .features-img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      display: block;
+    }
+    .features-img-accent {
+      position: absolute;
+      top: -2rem;
+      right: -2rem;
+      width: 60%;
+      height: 240px;
+      object-fit: cover;
+      border: 4px solid var(--sand-dark);
+      z-index: 2;
+    }
+    .features-content {}
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-top: 3rem;
+      border-top: 1px solid rgba(26,24,20,0.1);
+    }
+    .feature-card {
+      padding: 2rem 1.5rem 2rem 0;
+      border-bottom: 1px solid rgba(26,24,20,0.08);
+      border-right: 1px solid rgba(26,24,20,0.08);
+    }
+    .feature-card:nth-child(even) { border-right: none; padding-left: 1.5rem; padding-right: 0; }
+    .feature-card:nth-last-child(-n+2) { border-bottom: none; }
+    .feature-icon {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+    .feature-name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 0.4rem;
+    }
+    .feature-desc {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ── FLOOR PLANS ── */
+    .floorplan {
+      padding: 9rem 4rem;
+      background: var(--cream);
+    }
+    .floorplan-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+    .floorplan-cards {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .floorplan-card {
+      background: var(--white);
+      padding: 2rem 2.2rem;
+      border-left: 3px solid var(--gold);
+      box-shadow: 0 2px 20px rgba(26,24,20,0.06);
+    }
+    .floorplan-level {
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
+    }
+    .floorplan-size {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: var(--charcoal);
+      line-height: 1;
+    }
+    .floorplan-size span {
+      font-size: 1rem;
+      font-family: var(--font-body);
+      color: var(--stone);
+      font-weight: 300;
+    }
+    .floorplan-rooms {
+      font-size: 0.82rem;
+      color: var(--text-mid);
+      margin-top: 0.8rem;
+      line-height: 1.6;
+    }
+    .floorplan-total {
+      background: var(--charcoal);
+      padding: 2rem 2.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .total-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+    .total-num {
+      font-family: var(--font-display);
+      font-size: 2.6rem;
+      font-weight: 300;
+      color: var(--gold-light);
+    }
+    .total-num span {
+      font-size: 1rem;
+      font-family: var(--font-body);
+      font-weight: 300;
+      color: var(--stone-light);
+    }
+
+    /* ── LOCATION ── */
+    .location {
+      background: var(--charcoal);
+      padding: 9rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8rem;
+      align-items: center;
+    }
+    .location-content .section-title { color: var(--white); }
+    .location-content .section-body { color: rgba(255,255,255,0.6); }
+    .location-facts {
+      margin-top: 3rem;
+      display: grid;
+      gap: 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .location-fact {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      align-items: center;
+    }
+    .fact-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      min-width: 110px;
+    }
+    .fact-value {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+      font-weight: 300;
+    }
+    .location-map {
+      position: relative;
+    }
+    .map-embed {
+      width: 100%;
+      height: 460px;
+      border: none;
+      display: block;
+      filter: grayscale(30%) contrast(1.1);
+    }
+    .map-pin {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    /* ── INVESTMENT ── */
+    .investment {
+      padding: 9rem 4rem;
+      background: var(--sand-dark);
+    }
+    .investment-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .investment-inner .section-body {
+      max-width: 680px;
+      margin: 0 auto 4rem;
+    }
+    .investment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: rgba(26,24,20,0.1);
+      margin-top: 4rem;
+    }
+    .invest-item {
+      background: var(--cream);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .invest-icon {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .invest-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 0.6rem;
+    }
+    .invest-desc {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.65;
+    }
+
+    /* ── INQUIRY / CTA ── */
+    .inquiry {
+      background: var(--charcoal);
+      padding: 9rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8rem;
+      align-items: start;
+    }
+    .inquiry-content .section-title { color: var(--white); }
+    .inquiry-content .section-body { color: rgba(255,255,255,0.6); }
+    .inquiry-details {
+      margin-top: 2.5rem;
+      display: grid;
+      gap: 1rem;
+    }
+    .inquiry-detail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+    }
+    .inquiry-detail-icon { color: var(--gold); font-size: 1rem; }
+    .inquiry-form-wrap {}
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 0.5rem;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 300;
+      padding: 0.9rem 1.1rem;
+      transition: border-color 0.2s;
+      outline: none;
+      appearance: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--gold);
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+    .form-group select option { background: var(--charcoal-mid); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .form-submit {
+      width: 100%;
+      background: var(--gold);
+      border: none;
+      color: var(--charcoal);
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 1.1rem 2rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 0.5rem;
+    }
+    .form-submit:hover { background: var(--gold-light); }
+    .form-note {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.3);
+      margin-top: 0.8rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .video-tour { padding: 5rem 2rem; }
+      .video-grid { grid-template-columns: 1fr; }
+      .video-cell video { height: 260px; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 1.5rem 2rem; }
+      nav.scrolled { padding: 1rem 2rem; }
+      .nav-links { display: none; }
+      .hero-content { padding: 0 2rem 5rem; }
+      .hero-scroll { right: 2rem; }
+      .stats-inner { grid-template-columns: repeat(3, 1fr); }
+      .stat-item:nth-child(4), .stat-item:nth-child(5) { border-top: 1px solid rgba(255,255,255,0.08); }
+      .intro, .features-inner, .floorplan-inner,
+      .location, .inquiry {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        padding: 6rem 2rem;
+      }
+      .gallery-header { padding: 4rem 2rem 3rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+      .gallery-cell:first-child { grid-row: auto; height: 320px; }
+      .gallery-cell { height: 240px; }
+      .investment { padding: 6rem 2rem; }
+      .investment-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+      .features { padding: 6rem 2rem; }
+      .floorplan { padding: 6rem 2rem; }
+      .location { padding: 6rem 2rem; }
+    }
+  /* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 4rem;display:flex;align-items:center;justify-content:space-between;transition:all .4s ease}
+nav.scrolled{background:rgba(26,24,20,.96);backdrop-filter:blur(12px);padding:1rem 4rem;box-shadow:0 1px 0 rgba(184,153,106,.15)}
+.nav-logo{font-family:var(--font-display);font-size:1.4rem;font-weight:400;letter-spacing:.08em;color:#fff;text-decoration:none}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links a{font-size:.75rem;font-weight:400;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.7);text-decoration:none;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold-light)}
+.nav-cta{background:transparent;border:1px solid rgba(184,153,106,.6);color:var(--gold-light);font-family:var(--font-body);font-size:.72rem;font-weight:400;letter-spacing:.15em;text-transform:uppercase;padding:.6rem 1.4rem;cursor:pointer;transition:all .3s;text-decoration:none;white-space:nowrap}
+.nav-cta:hover{background:var(--gold);border-color:var(--gold);color:var(--charcoal)}
+/* ── FOOTER ── */
+footer{background:#0f0e0c;padding:5rem 4rem 3rem;border-top:1px solid rgba(184,153,106,.12)}
+.footer-inner{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:4rem;margin-bottom:3rem}
+.footer-brand{}
+.footer-logo{font-family:var(--font-display);font-size:1.8rem;font-weight:400;color:#fff;letter-spacing:.06em;margin-bottom:1rem;display:block;text-decoration:none}
+.footer-logo span{color:var(--gold)}
+.footer-tagline{font-size:.82rem;color:rgba(255,255,255,.32);line-height:1.75;max-width:300px}
+.footer-col-title{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.footer-links{list-style:none;display:grid;gap:.65rem}
+.footer-links a{font-size:.84rem;color:rgba(255,255,255,.42);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--gold-light)}
+.footer-contact-item{font-size:.84rem;color:rgba(255,255,255,.42);margin-bottom:.7rem;line-height:1.6}
+.footer-contact-item strong{display:block;color:rgba(255,255,255,.6);font-weight:400;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.2rem}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.footer-copy{font-size:.72rem;color:rgba(255,255,255,.2)}
+.footer-credits{font-size:.72rem;color:rgba(255,255,255,.2)}
+.footer-credits a{color:rgba(255,255,255,.35);text-decoration:none}
+.footer-credits a:hover{color:var(--gold-light)}
+@media(max-width:900px){nav{padding:1.2rem 2rem}.nav-links{display:none}.nav-cta{padding:.5rem 1rem;font-size:.68rem}
+footer{padding:4rem 2rem 2.5rem}.footer-inner{grid-template-columns:1fr;gap:2.5rem}.footer-bottom{flex-direction:column;text-align:center;gap:.4rem}}
+</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateListing",
+    "name": "Pasha Villas — New Build Villas for Sale in Parga Greece | Trikorfo, Parga",
+    "description": "Six new-build architect-designed villas for sale in Trikorfo, Parga, Greece. Private pool, 2 bedrooms, 2 bathrooms, 114 m² across two levels. From €450,000. Greek Golden Visa Zone 2.",
+    "url": "https://www.pargadreams.com/pasha-villas/",
+    "numberOfBedrooms": 2,
+    "numberOfBathroomsTotal": 2,
+    "floorSize": {"@type": "QuantitativeValue","value": 114.06,"unitCode": "MTK"},
+    "address": {"@type": "PostalAddress","streetAddress": "Trikorfo","addressLocality": "Parga","addressRegion": "Epirus","addressCountry": "GR"},
+    "geo": {"@type": "GeoCoordinates","latitude": "39.2833","longitude": "20.4001"},
+    "offers": {"@type": "Offer", "price": "450000", "priceCurrency": "EUR", "availability": "https://schema.org/LimitedAvailability"},
+  "amenityFeature": [
+      {"@type": "LocationFeatureSpecification","name": "Private Swimming Pool","value": true},
+      {"@type": "LocationFeatureSpecification","name": "Private Parking","value": true},
+      {"@type": "LocationFeatureSpecification","name": "Pergola","value": true},
+      {"@type": "LocationFeatureSpecification","name": "New Construction","value": true}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <nav id="nav">
+  <a href="/" class="nav-logo">Parga<span>Dreams</span></a>
+  <ul class="nav-links">
+    <li><a href="/" class="active">Home</a></li>
+    <li><a href="gallery_page.html">Gallery</a></li>
+    <li><a href="location_page.html">Location</a></li>
+    <li><a href="pasha_villas_page.html">The Villas</a></li>
+    <li><a href="investment_page.html">Investment</a></li>
+    <li><a href="floor_plans_page.html">Floor Plans</a></li>
+  </ul>
+  <a href="#inquiry" class="nav-cta">Inquire Now</a>
+</nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <video class="hero-img" autoplay muted loop playsinline poster="media/images/pool_mountain.jpg">
+        <source src="media/videos/Pasha_2.mp4" type="video/mp4">
+        <source src="media/videos/Pasha_2.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">New Build Villas for Sale — Trikorfo, Parga, Greece</p>
+      <h1 class="hero-title">Pasha Villas<br><em>Villas for Sale</em><br>Parga, Greece</h1>
+      <p class="hero-sub">Six new-build contemporary villas for sale in Trikorfo, Parga — each with a private pool, pergola, private parking, and 114 m² of architect-designed living space. From €450,000. Golden Visa Zone 2.</p>
+      <div class="hero-actions">
+        <a href="#villas" class="btn-primary">View Villas from €450,000</a>
+        <a href="#inquiry" class="btn-ghost">Request Information</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ STATS BAR ═══════════ -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item reveal">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Private Villas</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-num">114</div>
+        <div class="stat-label">m² per Home</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-num">€400k</div>
+        <div class="stat-label">Golden Visa Zone 2</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Private Pools</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-4">
+        <div class="stat-num">€450k</div>
+        <div class="stat-label">From / Per Villa</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ INTRO / CONCEPT ═══════════ -->
+  <section class="intro" id="villas">
+    <div class="intro-text">
+      <p class="section-eyebrow reveal">Villas for Sale — Parga, Greece</p>
+      <h2 class="section-title reveal reveal-delay-1">New Build Villas<br><em>Parga, Greece</em></h2>
+      <div class="intro-divider reveal reveal-delay-2"></div>
+      <p class="section-body reveal reveal-delay-2">
+        Pasha Villas offers six new-build contemporary <strong style="color:var(--text-dark);">villas for sale in Parga, Greece</strong> — architect-designed by Anastasios Efstratiou and priced from €450,000. Each villa delivers private pool living that rivals the Ionian islands at a fraction of the cost. — contemporary geometry grounded in local materiality, designed by Anastasios Efstratiou to honor the landscape of Parga while meeting the expectations of a modern buyer.
+      </p>
+      <p class="section-body reveal reveal-delay-3" style="margin-top:1.2rem;">
+        Greek residential property prices rose <strong style="color:var(--text-dark);">7.69% year-on-year</strong> (Bank of Greece, Q3 2025), with new builds outperforming at 8%. With only 4 new-build listings in the entire Parga area market, this is rare product in a supply-constrained destination.
+      </p>
+      <div class="intro-features reveal reveal-delay-3">
+        <div class="feature-item"><div class="feature-dot"></div><div class="feature-text">Private pool per villa</div></div>
+        <div class="feature-item"><div class="feature-dot"></div><div class="feature-text">Private parking</div></div>
+        <div class="feature-item"><div class="feature-dot"></div><div class="feature-text">Covered pergola terrace</div></div>
+        <div class="feature-item"><div class="feature-dot"></div><div class="feature-text">Natural stone façades</div></div>
+        <div class="feature-item"><div class="feature-dot"></div><div class="feature-text">New construction</div></div>
+        <div class="feature-item"><div class="feature-dot"></div><div class="feature-text">Architect-designed</div></div>
+      </div>
+    </div>
+    <div class="intro-visual reveal reveal-delay-2">
+      <img src="media/images/lifestyle.jpg" alt="Pasha Villas family outdoor living, Trikorfo Parga Greece" class="intro-img-main">
+      <div class="intro-img-badge">
+        <span class="badge-num">2026</span>
+        <span class="badge-text">New Construction<br>Trikorfo, Parga</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ GALLERY ═══════════ -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header">
+      <div>
+        <p class="section-eyebrow">Gallery</p>
+        <h2 class="section-title">Architecture<br><em>& Outdoor Living</em></h2>
+      </div>
+      <a href="#inquiry" class="gallery-link">Request Full Gallery</a>
+    </div>
+    <div class="gallery-grid">
+      <!-- Large cell -->
+      <div class="gallery-cell">
+        <img src="media/images/pool_sunbeds.jpg" alt="Pasha Villas private pool with sunbeds, Parga Greece">
+        <div class="gallery-cell-overlay"></div>
+        <span class="cell-label">Pool & Sunbeds</span>
+      </div>
+      <!-- Cell 2 -->
+      <div class="gallery-cell">
+        <img src="media/images/pool_mountain.jpg" alt="Pasha Villas stone facade and pool with mountain view, Parga">
+        <div class="gallery-cell-overlay"></div>
+        <span class="cell-label">Stone Facade — Mountain View</span>
+      </div>
+      <!-- Cell 3 — placeholder for drone/aerial -->
+      <div class="gallery-cell">
+        <img src="media/images/aerial.jpg" alt="Aerial view of Pasha Villas complex with 6 private pools, Trikorfo Parga">
+        <div class="gallery-cell-overlay"></div>
+        <span class="cell-label">Aerial — Site Plan</span>
+      </div>
+      <!-- Cell 4 -->
+      <div class="gallery-cell">
+        <img src="media/images/interior_glass.jpg" alt="Interior view through glass doors to pool terrace, Pasha Villas Parga">
+        <div class="gallery-cell-overlay"></div>
+        <span class="cell-label">Through the Glass — Pool View</span>
+      </div>
+      <!-- Cell 5 — placeholder for interior -->
+      <div class="gallery-cell">
+        <img src="media/images/pool_hedge.jpg" alt="Private pool and hedged garden, Pasha Villas Parga Greece">
+        <div class="gallery-cell-overlay"></div>
+        <span class="cell-label">Private Pool & Garden</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ VIDEO TOUR ═══════════ -->
+  <section class="video-tour" id="video-tour">
+    <div class="video-tour-header">
+      <p class="section-eyebrow">Video Tour</p>
+      <h2 class="section-title">See Pasha Villas<br><em>Come Alive</em></h2>
+    </div>
+    <div class="video-grid">
+      <div class="video-cell">
+        <video controls preload="metadata" poster="media/images/pool_mountain.jpg">
+          <source src="media/videos/Pasha_2.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <div class="video-label">
+          <span class="video-label-tag">Villa Walkthrough</span>
+          <p class="video-label-desc">Exterior, pool terrace & approach</p>
+        </div>
+      </div>
+      <div class="video-cell">
+        <video controls preload="metadata" poster="media/images/pool_mountain.jpg">
+          <source src="media/videos/Pasha_2.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <div class="video-label">
+          <span class="video-label-tag">Complex Overview</span>
+          <p class="video-label-desc">Full complex, pools & landscape</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FEATURES ═══════════ -->
+  <section class="features" id="features">
+    <div class="features-inner">
+      <div class="features-visual">
+        <img src="media/images/pool_mountain.jpg" alt="Pasha Villas private pool with mountain backdrop, Parga Greece" class="features-img reveal">
+        <img src="media/images/dusk_facade.jpg" alt="Pasha Villas at dusk, stone facade, Trikorfo Parga" class="features-img-accent reveal reveal-delay-2">
+      </div>
+      <div class="features-content">
+        <p class="section-eyebrow reveal">New Build Villas for Sale in Parga</p>
+        <h2 class="section-title reveal reveal-delay-1">Every Villa.<br><em>Complete & Private.</em></h2>
+        <p class="section-body reveal reveal-delay-2">
+          Each Parga villa for sale at Pasha comes fully specified: natural stone façades, oversized dark-framed sliding doors, covered pergola terrace, private pool, and private parking. Greece's Capital Gains Tax is suspended until <strong style="color:var(--text-dark);">31 December 2026</strong> — buyers entering now benefit from this window.
+        </p>
+        <div class="features-grid reveal reveal-delay-3">
+          <div class="feature-card">
+            <span class="feature-icon">🏊</span>
+            <div class="feature-name">Private Pool</div>
+            <div class="feature-desc">Each villa has its own pool — never shared</div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🌿</span>
+            <div class="feature-name">Pergola Living</div>
+            <div class="feature-desc">Covered outdoor room per villa</div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🚗</span>
+            <div class="feature-name">Private Parking</div>
+            <div class="feature-desc">Dedicated space with shading provision</div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🏗</span>
+            <div class="feature-name">New Build</div>
+            <div class="feature-desc">Contemporary construction to current standards</div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🪨</span>
+            <div class="feature-name">Natural Stone</div>
+            <div class="feature-desc">Hand-laid local stone façades</div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🔒</span>
+            <div class="feature-name">Privacy by Design</div>
+            <div class="feature-desc">Staggered layout — no overlooking</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FLOOR PLANS ═══════════ -->
+  <section class="floorplan" id="floorplans">
+    <div class="floorplan-inner">
+      <div>
+        <p class="section-eyebrow reveal">114 m² Villas — Parga, Greece</p>
+        <h2 class="section-title reveal reveal-delay-1">2 Bedrooms, 2 Bathrooms<br><em>Private Pool · 114 m²</em></h2>
+        <p class="section-body reveal reveal-delay-2">
+          Each villa for sale in Trikorfo, Parga spans <strong style="color:var(--text-dark);">114.06 m²</strong> across two levels — ground floor living opening directly to the private pool terrace, plus a private loft level above. Two bedrooms, two bathrooms, pergola, pool, and dedicated parking: the complete package from €450,000.
+        </p>
+        <div class="floorplan-cards reveal reveal-delay-3" style="margin-top: 2.5rem;">
+          <div class="floorplan-card">
+            <div class="floorplan-level">Ground Floor</div>
+            <div class="floorplan-size">78.78 <span>m²</span></div>
+            <div class="floorplan-rooms">Open-plan living · Kitchen · Dining · Master bedroom · Bathroom · Pergola terrace · Pool access · Storage</div>
+          </div>
+          <div class="floorplan-card">
+            <div class="floorplan-level">Loft Level</div>
+            <div class="floorplan-size">35.28 <span>m²</span></div>
+            <div class="floorplan-rooms">Sleeping area · Full bathroom · Internal stair access · Flexible layout</div>
+          </div>
+          <div class="floorplan-total">
+            <div>
+              <div class="total-label">Total Living Area</div>
+              <div style="font-size:0.75rem; color: rgba(255,255,255,0.3); margin-top:0.3rem;">plus pool · parking · pergola</div>
+            </div>
+            <div class="total-num">114<span> m²</span></div>
+          </div>
+        </div>
+        <div style="margin-top: 2rem;" class="reveal">
+          <a href="#inquiry" class="btn-primary">Request Full Floor Plans</a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <!-- Floor plan visual representation -->
+        <svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg" style="width:100%; background:#f5f0e8; padding: 2rem; display:block;">
+          <!-- Ground Floor -->
+          <text x="20" y="30" fill="#b8996a" font-size="9" font-family="DM Sans, sans-serif" letter-spacing="3" text-transform="uppercase">GROUND FLOOR · 78.78 m²</text>
+          <!-- Main outline -->
+          <rect x="20" y="45" width="240" height="160" fill="none" stroke="#1a1814" stroke-width="2"/>
+          <!-- Rooms divider -->
+          <line x1="90" y1="45" x2="90" y2="205" stroke="#1a1814" stroke-width="1"/>
+          <line x1="90" y1="130" x2="260" y2="130" stroke="#1a1814" stroke-width="1"/>
+          <!-- Labels -->
+          <text x="30" y="85" fill="#4a4540" font-size="7.5" font-family="DM Sans, sans-serif">BEDROOM</text>
+          <text x="30" y="96" fill="#8c7e6a" font-size="6.5" font-family="DM Sans, sans-serif">Master</text>
+          <text x="30" y="165" fill="#4a4540" font-size="7.5" font-family="DM Sans, sans-serif">BATH</text>
+          <text x="102" y="80" fill="#4a4540" font-size="7.5" font-family="DM Sans, sans-serif">KITCHEN / DINING</text>
+          <text x="102" y="165" fill="#4a4540" font-size="7.5" font-family="DM Sans, sans-serif">LIVING AREA</text>
+          <!-- Stair indicator -->
+          <rect x="130" y="185" width="40" height="20" fill="#b8996a" opacity="0.25" stroke="#b8996a" stroke-width="0.5"/>
+          <text x="132" y="198" fill="#b8996a" font-size="6" font-family="DM Sans, sans-serif">STAIR UP</text>
+          <!-- Pergola -->
+          <rect x="260" y="45" width="100" height="160" fill="none" stroke="#b8996a" stroke-width="1.5" stroke-dasharray="4,3"/>
+          <text x="275" y="120" fill="#b8996a" font-size="7.5" font-family="DM Sans, sans-serif">PERGOLA</text>
+          <text x="272" y="132" fill="#b8996a" font-size="6.5" font-family="DM Sans, sans-serif">Outdoor Room</text>
+          <!-- Pool -->
+          <rect x="275" y="220" width="85" height="55" fill="#b8996a" opacity="0.12" stroke="#b8996a" stroke-width="1"/>
+          <text x="293" y="251" fill="#b8996a" font-size="7.5" font-family="DM Sans, sans-serif">POOL</text>
+          <!-- Parking -->
+          <rect x="20" y="220" width="75" height="55" fill="none" stroke="#8c7e6a" stroke-width="1" stroke-dasharray="3,2"/>
+          <text x="35" y="251" fill="#8c7e6a" font-size="7.5" font-family="DM Sans, sans-serif">PARKING</text>
+
+          <!-- Divider line -->
+          <line x1="20" y1="300" x2="360" y2="300" stroke="#b8996a" stroke-width="0.5" opacity="0.4"/>
+
+          <!-- Loft -->
+          <text x="20" y="325" fill="#b8996a" font-size="9" font-family="DM Sans, sans-serif" letter-spacing="3">LOFT LEVEL · 35.28 m²</text>
+          <rect x="20" y="340" width="180" height="140" fill="none" stroke="#1a1814" stroke-width="2"/>
+          <line x1="90" y1="340" x2="90" y2="480" stroke="#1a1814" stroke-width="1"/>
+          <line x1="20" y1="415" x2="200" y2="415" stroke="#1a1814" stroke-width="0.75"/>
+          <text x="28" y="375" fill="#4a4540" font-size="7.5" font-family="DM Sans, sans-serif">BEDROOM</text>
+          <text x="100" y="375" fill="#4a4540" font-size="7.5" font-family="DM Sans, sans-serif">OPEN LOFT</text>
+          <text x="28" y="450" fill="#4a4540" font-size="7.5" font-family="DM Sans, sans-serif">BATHROOM</text>
+          <!-- Stair down -->
+          <rect x="130" y="460" width="40" height="20" fill="#b8996a" opacity="0.25" stroke="#b8996a" stroke-width="0.5"/>
+          <text x="132" y="473" fill="#b8996a" font-size="6" font-family="DM Sans, sans-serif">STAIR DN</text>
+
+          <!-- North indicator -->
+          <circle cx="360" cy="460" r="14" fill="none" stroke="#8c7e6a" stroke-width="1"/>
+          <text x="356" y="448" fill="#8c7e6a" font-size="7" font-family="DM Sans, sans-serif">N</text>
+          <line x1="360" y1="448" x2="360" y2="436" stroke="#b8996a" stroke-width="1.5"/>
+          <polygon points="360,432 356,444 364,444" fill="#b8996a" opacity="0.6"/>
+        </svg>
+        <p style="font-size: 0.7rem; color: var(--text-light); margin-top: 0.75rem; text-align: center; letter-spacing: 0.1em;">Schematic representation · Not to scale · Full plans available on request</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ LOCATION ═══════════ -->
+  <section class="location" id="location">
+    <div class="location-content">
+      <p class="section-eyebrow reveal">Location</p>
+      <h2 class="section-title reveal reveal-delay-1">Parga, Epirus —<br><em>Greece's Best-Kept Secret</em></h2>
+      <p class="section-body reveal reveal-delay-2">
+        Buying property in Parga, Greece puts you on the Ionian coast of Epirus — transparent water, the landmark Venetian castle, pine-backed beaches at Valtos and Lichnos, and 280+ sunny days per year. The villas sit on the Trikorfo hillside above Parga, with direct access to hiking and cycling trails into the Epirus mountains — and a historic fortress ruin within five minutes’ walk. The mountain panoramas visible from every terrace set Trikorfo apart: the Epirus mountains are the view here, and they are extraordinary. With Greece welcoming a record <strong style="color:var(--white);">37 million visitors in 2025</strong>, generating €23 billion in revenue, Parga's investment credentials are stronger than ever.
+      </p>
+      <div class="location-facts reveal reveal-delay-3">
+        <div class="location-fact">
+          <span class="fact-label">Airport</span>
+          <span class="fact-value">Aktio (PVK), 45 min — seasonal direct flights from UK, DE, NL, Scandinavia</span>
+        </div>
+        <div class="location-fact">
+          <span class="fact-label">By Road</span>
+          <span class="fact-value">E55 Ionian Motorway — Belgrade ~8h, Athens ~5h</span>
+        </div>
+        <div class="location-fact">
+          <span class="fact-label">Climate</span>
+          <span class="fact-value">280+ sunny days · Mild winters · Dry summers</span>
+        </div>
+        <div class="location-fact">
+          <span class="fact-label">Beaches</span>
+          <span class="fact-value">Valtos, Krioneri, Sarakiniko — 5–15 min walk or drive</span>
+        </div>
+        <div class="location-fact">
+          <span class="fact-label">Season</span>
+          <span class="fact-value">Tourist season Apr–Oct · Year-round community</span>
+        </div>
+      </div>
+      <div class="visa-badge reveal reveal-delay-4">
+        <span class="visa-icon">🇬🇷</span>
+        <div class="visa-text">
+          <div class="visa-title">Greek Golden Visa Zone 2 — €400,000 Threshold · Parga Qualifies</div>
+          <div class="visa-desc">Parga is in the lower-threshold zone. EU Schengen residency for investor + family. Consult a qualified immigration attorney for current requirements.</div>
+        </div>
+      </div>
+    </div>
+    <div class="location-map reveal reveal-delay-2">
+      <iframe
+        class="map-embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12572.0!2d20.4001!3d39.2833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b5c2e4e4a4a4a%3A0x0!2sParga%2C+Greece!5e0!3m2!1sen!2s!4v1"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Parga, Greece map location">
+      </iframe>
+      <div style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-left: 2px solid var(--gold);">
+        <div style="font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem;">Exact Location</div>
+        <div style="font-size: 0.9rem; color: rgba(255,255,255,0.65);">Trikorfo, Parga, Preveza<br>Epirus Region, Greece</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ INVESTMENT ═══════════ -->
+  <section class="investment" id="investment">
+    <div class="investment-inner">
+      <p class="section-eyebrow reveal" style="text-align:center;">Parga Greece Real Estate Investment</p>
+      <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">Why Buyers Choose<br><em>Parga, Greece</em></h2>
+      <p class="section-body reveal reveal-delay-2" style="text-align:center; margin: 0 auto 1rem;">
+        Greek property prices have risen <strong style="color:var(--text-dark);">86% since 2017</strong>, with sea-view villas with pools appreciating 10–15% annually in prime coastal locations. New-build villa product with private pools is rare in the Parga market — Pasha Villas is among just 4 new-build listings in the area, at the premium end of constrained supply. Capital Gains Tax suspended until December 2026.
+      </p>
+      <div class="investment-grid reveal reveal-delay-3">
+        <div class="invest-item">
+          <span class="invest-icon">📈</span>
+          <div class="invest-title">Consistent Demand</div>
+          <div class="invest-desc">Greece welcomed 37 million visitors in 2025 — a national record. Parga's loyal visitor base from UK, DE, NL and Balkans drives consistent rental demand.</div>
+        </div>
+        <div class="invest-item">
+          <span class="invest-icon">🏡</span>
+          <div class="invest-title">Short-Term Rental</div>
+          <div class="invest-desc">Private pool villas command a premium on the Parga rental market. Season runs May–October, with April and November shoulder bookings growing annually.</div>
+        </div>
+        <div class="invest-item">
+          <span class="invest-icon">🌍</span>
+          <div class="invest-title">Golden Visa Eligible</div>
+          <div class="invest-desc">€400k threshold zone. EU Schengen residency for buyer + immediate family</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ INQUIRY ═══════════ -->
+  <section class="inquiry" id="inquiry">
+    <div class="inquiry-content">
+      <p class="section-eyebrow reveal">Get in Touch</p>
+      <h2 class="section-title reveal reveal-delay-1" style="color: var(--white);">Inquire About<br><em style="color: var(--gold-light);">Pasha Villas, Parga</em></h2>
+      <p class="section-body reveal reveal-delay-2" style="color: rgba(255,255,255,0.55);">
+        We welcome serious inquiries from buyers searching for villas for sale in Parga, Greece. Whether at early research stage or ready to proceed, we provide complete information on Pasha Villas pricing, floor plans, the Greek buying process, and Golden Visa considerations — without pressure. Only 6 homes available.
+      </p>
+      <div class="inquiry-details reveal reveal-delay-3">
+        <div class="inquiry-detail"><span class="inquiry-detail-icon">✉</span> info@pargadreams.com</div>
+        <div class="inquiry-detail"><span class="inquiry-detail-icon">💬</span> WhatsApp available for international buyers</div>
+        <div class="inquiry-detail"><span class="inquiry-detail-icon">⏱</span> Response within one business day</div>
+        <div class="inquiry-detail"><span class="inquiry-detail-icon">📋</span> Pricing · Availability · Legal guidance referrals</div>
+        <div class="inquiry-detail"><span class="inquiry-detail-icon">✈</span> Site viewings arranged in Parga</div>
+      </div>
+    </div>
+    <div class="inquiry-form-wrap reveal reveal-delay-2">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country">
+            <option value="">Select country</option>
+            <option>United Kingdom</option>
+            <option>Germany</option>
+            <option>Netherlands</option>
+            <option>Sweden</option>
+            <option>Norway</option>
+            <option>Serbia</option>
+            <option>United States</option>
+            <option>Australia</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" placeholder="your@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone / WhatsApp</label>
+        <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+      </div>
+      <div class="form-group">
+        <label for="interest">Primary Interest</label>
+        <select id="interest">
+          <option>Personal Use / Primary Residence</option>
+          <option>Holiday Home / Second Home</option>
+          <option>Investment / Rental Income</option>
+          <option>Golden Visa Qualification</option>
+          <option>Combination of the Above</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="I am interested in Pasha Villas. Please send me pricing and availability information.">I am interested in Pasha Villas. Please send me pricing and availability information.</textarea>
+      </div>
+      <button type="submit" class="form-submit" onclick="handleSubmit(event)">Send Inquiry →</button>
+      <p class="form-note">Your details are used only to respond to your inquiry. We do not share your information with third parties. Pasha Villas is a limited collection of 6 homes.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">Parga<span>Dreams</span></a>
+      <p class="footer-tagline">Six new-build villas for sale in Parga, Greece. Private pools, 114 m², architect-designed. Trikorfo, Parga, Epirus. From €450,000. Golden Visa Zone 2.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Navigation</p>
+      <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="gallery_page.html">Gallery</a></li>
+          <li><a href="location_page.html">Location</a></li>
+          <li><a href="pasha_villas_page.html">The Villas</a></li>
+          <li><a href="investment_page.html">Investment</a></li>
+          <li><a href="floor_plans_page.html">Floor Plans</a></li>
+          <li><a href="#inquiry">Inquire</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Contact</p>
+      <div class="footer-contact-item">
+        <strong>Email</strong>
+        info@pargadreams.com
+      </div>
+      <div class="footer-contact-item">
+        <strong>Location</strong>
+        Trikorfo, Parga<br>Preveza, Epirus, Greece
+      </div>
+      <div class="footer-contact-item" style="margin-top:1.5rem;font-size:.72rem;color:rgba(255,255,255,.25);line-height:1.6">
+        This website is provided for informational purposes only and does not constitute a legal offer to sell property. All specifications are subject to change. Buyers should seek independent legal and financial advice.
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 PargaDreams.com · Pasha Villas, Trikorfo, Parga, Greece</p>
+    <p class="footer-credits">Architecture: <a href="#">Anastasios Efstratiou</a> · Visualisation: <a href="#">Sokratis Tzanis</a></p>
+  </div>
+</footer>
+
+  <script>
+    // ── Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ── Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('animate-in');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+
+    // ── Smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ── Form submit handler
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target;
+      btn.textContent = 'Inquiry Sent ✓';
+      btn.style.background = '#4a7c59';
+      btn.style.color = '#fff';
+      setTimeout(() => {
+        btn.textContent = 'Send Inquiry →';
+        btn.style.background = '';
+        btn.style.color = '';
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
